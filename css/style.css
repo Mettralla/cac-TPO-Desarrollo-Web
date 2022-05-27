@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* BACKGROUND COLOR */
+
+header,
+body,
+footer {
+    background-color: #090323;
+}
+
+/* HEADER CONTAINER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+/* HEADER ITEMS */
+
+#logo,
+ul {
+    margin: 0.5em;
+}
+
+#logo {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    font: 18px;
+    color: #e5e7eb;
+}
+
+a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+/* MAIN */
+
+
+.main-text,
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex: 1 1 35%; */
+    padding: 7%;
+}
+
+.name {
+    color: #927ae8;
+    font-weight: bold;
+    font-size: 9vh
+}
+
+.text-intro {
+    font-size: 4vh;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    gap: 2vh;
+}
+
+.btn-project,
+.btn-contact {
+    padding: 0.5em 1.5em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    font-weight: 600;
+}
+
+.btn-project {
+    background-color: #927ae8;
+    color: #f9faf8;
+    border: none;
+}
+
+.btn-contact {
+    background-color: #090323;
+    color: #927ae8;
+    border: solid #927ae8;
+}
+
+p {
+    color: #f9faf8;
+}
+
+/* i {
+    color: #f9faf8;
+    font-size: 3vh;
+}  */
+
+/* .icons {
+    display: flex;
+    gap: 1vh;
+} */
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    color: #f9faf8;
+    justify-content: center;
+    align-items: center;
+    /* Mantiene el footer pegado abajo */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
