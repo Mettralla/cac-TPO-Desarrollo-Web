@@ -4,29 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- LINKS IMPORTANTES -->
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- FIN GOOGLE FONT -->
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/3e81cc3298.js" crossorigin="anonymous"></script>
+    <!-- FIN DE FONT AWESOME -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FIN LINKS IMPORTANTES -->
+    <title>Contacto</title>
 </head>
 <body>
+
     <header>
-        <h2 id="logo">Header Logo</h2>
+        <h2 id="logo"><a class="link" href="./index.html"><i class="fa-solid fa-desktop"></i> Mettralla</h2></a>
         <nav>
             <ul>
-                <li><a href="./projects.html">link one</a></li>
-                <li><a href="./contact.html">link two</a></li>
-                <li>
-                    <div></div>
-                </li>
+                <li><a class="link" href="./projects.html">Proyectos</a></li>
+                <li><a class="link" href="./contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
-    
-    
+    <main class="contact">
+
+        <div class="container">
+
+            <h1 class="title">¿Interesado?</h1>
+            <div class="carrusel">
+                <div class="card">
+                <i class="fa-solid fa-house top-image"></i>
+                <p>Ubicación</p>
+                <p>Salta, Argentina</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-envelope top-image"></i>
+                <p>Email</p>
+                <p>daniel@gmail.com</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-hashtag top-image"></i>
+                <p>Social Media</p>
+                <div class="social-media">
+                    <a href="https://github.com/Mettralla"><i class="fa-brands fa-github sc-icon"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-alejandro-tejerina/"><i class="fa-brands fa-linkedin-in sc-icon"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="title">Contáctame</h2>
+        
+        <form class="coa" action="./js/script.js" target="_blank" id="form" name="fvalida">
+            <div class="data">
+                <input type="text" name="Nombre" placeholder="Nombre" size="40" id="nombre">
+                <input type="text" name="Email" placeholder="Email" size="40" id="email">
+            </div>
+            <textarea name="comment" class="textarea" placeholder="Dejame tus comentarios" size="40" rows="7" id="comment"></textarea>
+            <div class="send">
+                <input type="Submit" value="ENVIAR">
+            </div>
+        </form>
+        
+    </div>
+        
     </main>
     
     <footer>
-        <p>Copywright &copy; The Odin Project 2022</p>
+        <p>Copyright &copy; Daniel Tejerina 2022</p>
     </footer>
+    <script src="./js/validar.js"></script>
 </body>
 </html>

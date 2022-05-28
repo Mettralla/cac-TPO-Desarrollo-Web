@@ -10,18 +10,17 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/3e81cc3298.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <title>Portfolio</title>
 </head>
 <body>
 
     <header>
-        <h2 id="logo">Header Logo</h2>
+        <h2 id="logo"><a class="link" href="./index.html"><i class="fa-solid fa-desktop"></i> Mettralla</h2></a>
         <nav>
             <ul>
-                <!-- <li><a href="./">Habilidades</a></li> -->
-                <li><a href="./projects.html">Proyectos</a></li>
-                <li><a href="./contact.html">Contacto</a></li>
-                <!-- <li><div class="btnCv"></div></li> -->
+                <li><a class="link" href="./projects.html">Proyectos</a></li>
+                <li><a class="link" href="./contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -31,8 +30,8 @@
             <p class="name">Daniel Tejerina</p>
             <p class="text-intro">Full Stack Developer</p>
             <div class="btn">
-                <div class="btn-project">Proyectos</div>
-                <div class="btn-contact">Contacto</div>
+                <div class="btn-project btn-c" id="btn-project">Proyectos</div>
+                <div class="btn-contact btn-c" id="btn-contact">Contacto</div>
             </div>
         </div>
     </main>
@@ -40,5 +39,6 @@
     <footer>
         <p>Copyright &copy; Daniel Tejerina 2022</p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
